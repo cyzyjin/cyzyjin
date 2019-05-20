@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="utf-8">
+  
+
+  
+  <title>LAMP安装-debian9 | cyzyjin</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="第一步安装apache212apt-get install apache2systemctl restart apache2    #启动apache2 在浏览器的地址栏输入  localhost 第二步安装mariadb12apt-get install mariadb-serversystemctl restart mysql          #启动数据库 设置root密码12mysqlad">
+<meta property="og:type" content="article">
+<meta property="og:title" content="LAMP安装-debian9">
+<meta property="og:url" content="http://yoursite.com/2019/05/20/LAMP安装-debian9/index.html">
+<meta property="og:site_name" content="cyzyjin">
+<meta property="og:description" content="第一步安装apache212apt-get install apache2systemctl restart apache2    #启动apache2 在浏览器的地址栏输入  localhost 第二步安装mariadb12apt-get install mariadb-serversystemctl restart mysql          #启动数据库 设置root密码12mysqlad">
+<meta property="og:locale" content="default">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/12955800-45ba201bf8d0a335.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/12955800-07589a0733894c12.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:updated_time" content="2019-05-20T01:58:44.530Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="LAMP安装-debian9">
+<meta name="twitter:description" content="第一步安装apache212apt-get install apache2systemctl restart apache2    #启动apache2 在浏览器的地址栏输入  localhost 第二步安装mariadb12apt-get install mariadb-serversystemctl restart mysql          #启动数据库 设置root密码12mysqlad">
+<meta name="twitter:image" content="https://upload-images.jianshu.io/upload_images/12955800-45ba201bf8d0a335.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+  
+    <link rel="alternate" href="/atom.xml" title="cyzyjin" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+</html>
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">cyzyjin</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-LAMP安装-debian9" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/05/20/LAMP安装-debian9/" class="article-date">
+  <time datetime="2019-05-20T01:50:14.000Z" itemprop="datePublished">2019-05-20</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      LAMP安装-debian9
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="第一步安装apache2"><a href="#第一步安装apache2" class="headerlink" title="第一步安装apache2"></a>第一步安装apache2</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">apt-get install apache2</span><br><span class="line">systemctl restart apache2    <span class="comment">#启动apache2</span></span><br></pre></td></tr></table></figure>
+<p>在浏览器的地址栏输入  localhost<br><img src="https://upload-images.jianshu.io/upload_images/12955800-45ba201bf8d0a335.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="apa.png"></p>
+<h2 id="第二步安装mariadb"><a href="#第二步安装mariadb" class="headerlink" title="第二步安装mariadb"></a>第二步安装mariadb</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">apt-get install mariadb-server</span><br><span class="line">systemctl restart mysql          <span class="comment">#启动数据库</span></span><br></pre></td></tr></table></figure>
+<h4 id="设置root密码"><a href="#设置root密码" class="headerlink" title="设置root密码"></a>设置root密码</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">mysqladmin -u root -p password xxxx        <span class="comment">#按回车键</span></span><br><span class="line"><span class="comment">#在次按回车键，不用输入密码</span></span><br></pre></td></tr></table></figure>
+<h4 id="进入数据库新建用户"><a href="#进入数据库新建用户" class="headerlink" title="进入数据库新建用户"></a>进入数据库新建用户</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">mysql -u root -p          <span class="comment">#按回车键输入密码</span></span><br><span class="line">create user <span class="string">'xxx'</span>@<span class="string">'localhost'</span>;      <span class="comment">#按回车键</span></span><br><span class="line">grant all on *.* to <span class="string">'xxx'</span>@<span class="string">'localhost'</span>;      <span class="comment">#给权限</span></span><br><span class="line"><span class="built_in">exit</span>;</span><br></pre></td></tr></table></figure>
+<p>mysql语句后面一定有分号<br>xxx是用户名,localhost是本地<br>xxxx是您的数据库密码</p>
+<h4 id="登陆新用户"><a href="#登陆新用户" class="headerlink" title="登陆新用户"></a>登陆新用户</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">mysql -u xxx</span><br><span class="line"><span class="built_in">set</span> password = password(<span class="string">"xxxxxxxxxxxxxxxxx"</span>);    <span class="comment">#xxx用户设置密码</span></span><br><span class="line"><span class="built_in">exit</span>;</span><br></pre></td></tr></table></figure>
+<p>xxx是用户名<br>xxxxxxxxxxxxxxxxx是xxx的密码</p>
+<h2 id="第三步安装php"><a href="#第三步安装php" class="headerlink" title="第三步安装php"></a>第三步安装php</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">apt-get install php php-mysql</span><br></pre></td></tr></table></figure>
+<p>在/var/www/html中删除index.html，新建index.php并写入<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&lt;html&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line">&lt;?php</span><br><span class="line">phpinfo();</span><br><span class="line">?&gt;</span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure></p>
+<p>在浏览器的地址栏输入  localhost<br><img src="https://upload-images.jianshu.io/upload_images/12955800-07589a0733894c12.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="php.png"></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2019/05/20/LAMP安装-debian9/" data-id="cjvvqyo2p000d64j443t3x5a5" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2019/05/20/LAMP-fastadmin安装-debian9/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          LAMP-fastadmin安装-debian9
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2019/05/20/安装refindr引导工具-debian9/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">安装refindr引导工具-debian9</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/05/">May 2019</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2019/05/20/阿里源-kali/">阿里源-kali</a>
+          </li>
+        
+          <li>
+            <a href="/2019/05/20/升级内核-debian9/">升级内核-debian9</a>
+          </li>
+        
+          <li>
+            <a href="/2019/05/20/man中文cman配置方法-Linux/">man中文(cman)配置方法-Linux</a>
+          </li>
+        
+          <li>
+            <a href="/2019/05/20/163-apt源-debian9/">163 apt源 debian9</a>
+          </li>
+        
+          <li>
+            <a href="/2019/05/20/pycharm-中文-win-linux-mac-2018/">pycharm-中文 win linux mac 2018</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2019 John Doe<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+
+
+  </div>
+</body>
+</html>

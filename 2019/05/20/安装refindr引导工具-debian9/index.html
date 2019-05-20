@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="utf-8">
+  
+
+  
+  <title>安装refindr引导工具-debian9 | cyzyjin</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="rEFInd官网下载地址debian9-rEFInd下载1234dpkg -i refind_0.11.3-1_amd64.debcd /boot/efi/EFIrm -r debian       ###删除debian文件夹，这样就不会在refind引导里出现一个系统两个debian引导图标了reboot">
+<meta property="og:type" content="article">
+<meta property="og:title" content="安装refindr引导工具-debian9">
+<meta property="og:url" content="http://yoursite.com/2019/05/20/安装refindr引导工具-debian9/index.html">
+<meta property="og:site_name" content="cyzyjin">
+<meta property="og:description" content="rEFInd官网下载地址debian9-rEFInd下载1234dpkg -i refind_0.11.3-1_amd64.debcd /boot/efi/EFIrm -r debian       ###删除debian文件夹，这样就不会在refind引导里出现一个系统两个debian引导图标了reboot">
+<meta property="og:locale" content="default">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/12955800-8f2b3329101e023f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:updated_time" content="2019-05-20T01:59:32.845Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="安装refindr引导工具-debian9">
+<meta name="twitter:description" content="rEFInd官网下载地址debian9-rEFInd下载1234dpkg -i refind_0.11.3-1_amd64.debcd /boot/efi/EFIrm -r debian       ###删除debian文件夹，这样就不会在refind引导里出现一个系统两个debian引导图标了reboot">
+<meta name="twitter:image" content="https://upload-images.jianshu.io/upload_images/12955800-8f2b3329101e023f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+  
+    <link rel="alternate" href="/atom.xml" title="cyzyjin" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+</html>
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">cyzyjin</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-安装refindr引导工具-debian9" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/05/20/安装refindr引导工具-debian9/" class="article-date">
+  <time datetime="2019-05-20T01:47:49.000Z" itemprop="datePublished">2019-05-20</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      安装refindr引导工具-debian9
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><img src="https://upload-images.jianshu.io/upload_images/12955800-8f2b3329101e023f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="refind.png"><br><a href="http://www.rodsbooks.com/refind/" target="_blank" rel="noopener">rEFInd官网</a><br><a href="http://www.rodsbooks.com/refind/getting.html" target="_blank" rel="noopener">下载地址</a><br><a href="https://packages.debian.org/sid/admin/refind" target="_blank" rel="noopener">debian9-rEFInd下载</a><br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">dpkg -i refind_0.11.3-1_amd64.deb</span><br><span class="line"><span class="built_in">cd</span> /boot/efi/EFI</span><br><span class="line">rm -r debian       <span class="comment">###删除debian文件夹，这样就不会在refind引导里出现一个系统两个debian引导图标了</span></span><br><span class="line">reboot</span><br></pre></td></tr></table></figure></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2019/05/20/安装refindr引导工具-debian9/" data-id="cjvvqyo34000h64j4iz31yg9y" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2019/05/20/LAMP安装-debian9/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          LAMP安装-debian9
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2019/05/20/安装grub主题-debian9/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">安装grub主题-debian9</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/05/">May 2019</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2019/05/20/阿里源-kali/">阿里源-kali</a>
+          </li>
+        
+          <li>
+            <a href="/2019/05/20/升级内核-debian9/">升级内核-debian9</a>
+          </li>
+        
+          <li>
+            <a href="/2019/05/20/man中文cman配置方法-Linux/">man中文(cman)配置方法-Linux</a>
+          </li>
+        
+          <li>
+            <a href="/2019/05/20/163-apt源-debian9/">163 apt源 debian9</a>
+          </li>
+        
+          <li>
+            <a href="/2019/05/20/pycharm-中文-win-linux-mac-2018/">pycharm-中文 win linux mac 2018</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2019 John Doe<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+
+
+  </div>
+</body>
+</html>

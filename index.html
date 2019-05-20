@@ -62,10 +62,10 @@
       <div class="outer">
         <section id="main">
   
-    <article id="post-hexo安装使用" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-阿里源-kali" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2019/05/20/hexo安装使用/" class="article-date">
-  <time datetime="2019-05-20T01:14:37.000Z" itemprop="datePublished">2019-05-20</time>
+    <a href="/2019/05/20/阿里源-kali/" class="article-date">
+  <time datetime="2019-05-20T02:15:40.000Z" itemprop="datePublished">2019-05-20</time>
 </a>
     
   </div>
@@ -76,7 +76,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2019/05/20/hexo安装使用/">hexo安装使用</a>
+      <a class="article-title" href="/2019/05/20/阿里源-kali/">阿里源-kali</a>
     </h1>
   
 
@@ -84,21 +84,423 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h3 id="安装git"><a href="#安装git" class="headerlink" title="安装git"></a>安装git</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">apt-get install git</span><br></pre></td></tr></table></figure>
-<h3 id="下载nodejs"><a href="#下载nodejs" class="headerlink" title="下载nodejs"></a>下载nodejs</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wget https://nodejs.org/dist/v10.15.3/node-v10.15.3-linux-x64.tar.xz</span><br></pre></td></tr></table></figure>
-<h3 id="解压nodejs"><a href="#解压nodejs" class="headerlink" title="解压nodejs"></a>解压nodejs</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tar xvf node-v10.15.3-linux-x64.tar.xz</span><br></pre></td></tr></table></figure>
-<h3 id="改名"><a href="#改名" class="headerlink" title="改名"></a>改名</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mv node-v10.15.3-linux-x64 node</span><br></pre></td></tr></table></figure>
-<h3 id="移动文件到-opt"><a href="#移动文件到-opt" class="headerlink" title="移动文件到/opt"></a>移动文件到/opt</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mv node /opt</span><br></pre></td></tr></table></figure>
-<h3 id="软链接"><a href="#软链接" class="headerlink" title="软链接"></a>软链接</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">ln -s /opt/node/bin/node /usr/<span class="built_in">local</span>/bin/</span><br><span class="line">ln -s /opt/node/bin/npm /usr/<span class="built_in">local</span>/bin/</span><br><span class="line">查看node版本</span><br><span class="line">nodejs -v</span><br><span class="line">npm -v</span><br></pre></td></tr></table></figure>
-<h3 id="安装hexo"><a href="#安装hexo" class="headerlink" title="安装hexo"></a>安装hexo</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">npm install -g hexo-cli</span><br><span class="line">软链接</span><br><span class="line">ln -s /opt/node/lib/node_modules/hexo-cli/bin/hexo /usr/<span class="built_in">local</span>/bin/</span><br></pre></td></tr></table></figure>
-<h3 id="新建网站"><a href="#新建网站" class="headerlink" title="新建网站"></a>新建网站</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo init 网站名</span><br><span class="line"><span class="built_in">cd</span> 网站名</span><br><span class="line">npm install</span><br></pre></td></tr></table></figure>
-<h3 id="启动hexo"><a href="#启动hexo" class="headerlink" title="启动hexo"></a>启动hexo</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">生成</span><br><span class="line">hexo g</span><br><span class="line">启动</span><br><span class="line">hexo server</span><br></pre></td></tr></table></figure>
-<h3 id="部署git"><a href="#部署git" class="headerlink" title="部署git"></a>部署git</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">如果没有这条命令就无法上传到github</span><br><span class="line">npm install --save hexo-deployer-git</span><br><span class="line">上传</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
+        <h1 id="阿里云"><a href="#阿里云" class="headerlink" title="#阿里云"></a>#阿里云</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">deb https://mirrors.aliyun.com/kali kali-bleeding-edge main contrib non-free</span><br><span class="line">deb-src https://mirrors.aliyun.com/kali kali-bleeding-edge main contrib non-free</span><br><span class="line">deb https://mirrors.aliyun.com/kali kali-debian-picks main contrib non-free</span><br><span class="line">deb-src https://mirrors.aliyun.com/kali kali-debian-picks main contrib non-free</span><br><span class="line">deb https://mirrors.aliyun.com/kali kali-rolling main contrib non-free</span><br><span class="line">deb-src https://mirrors.aliyun.com/kali kali-rolling main contrib non-free</span><br><span class="line">deb https://mirrors.aliyun.com/kali kali-rolling-only main contrib non-free</span><br><span class="line">deb-src https://mirrors.aliyun.com/kali kali-rolling-only main contrib non-free</span><br></pre></td></tr></table></figure>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/05/20/hexo安装使用/" data-id="cjvvp8opk0000utj453lp0k5x" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/05/20/阿里源-kali/" data-id="cjvvqyo2o000c64j4f9y3g3qb" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-升级内核-debian9" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/05/20/升级内核-debian9/" class="article-date">
+  <time datetime="2019-05-20T02:14:32.000Z" itemprop="datePublished">2019-05-20</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/05/20/升级内核-debian9/">升级内核-debian9</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>4.15 amd64升级到4.16 amd64</p>
+<p>查看内核版<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">dpkg -l | grep linux-image</span><br></pre></td></tr></table></figure></p>
+<p>例如：我的内核版本为 4.15.0 amd64<br><img src="https://upload-images.jianshu.io/upload_images/12955800-dfad36ea4a84b574.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="深度截图_选择区域_20190328102219.png"></p>
+<p>安装最新的内核<br>查看最新内核版本<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">apt-get install linux-image*</span><br></pre></td></tr></table></figure></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/12955800-cd00dec632450512.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="深度截图_选择区域_20190328103434.png"></p>
+<p>最新内核版本 linux-image-4.16<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">apt-get install linux-image-4.16*-amd64</span><br></pre></td></tr></table></figure></p>
+<p>找到想要的内核版本并安装<br><img src="https://upload-images.jianshu.io/upload_images/12955800-bc140bb850179b8b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="深度截图_选择区域_20190328103257.png"></p>
+<p>安装完后重启系统<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">reboot</span><br></pre></td></tr></table></figure></p>
+<p>卸载旧内核<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">dpkg -l | grep linux-image</span><br><span class="line">apt-get remove linux-image*</span><br></pre></td></tr></table></figure></p>
+<p>在次重启<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">reboot</span><br></pre></td></tr></table></figure></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/12955800-e4bee06a375b9e8a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="深度截图_选择区域_20190328110307.png"></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2019/05/20/升级内核-debian9/" data-id="cjvvqyo2j000864j47egc8olh" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-man中文cman配置方法-Linux" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/05/20/man中文cman配置方法-Linux/" class="article-date">
+  <time datetime="2019-05-20T02:13:23.000Z" itemprop="datePublished">2019-05-20</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/05/20/man中文cman配置方法-Linux/">man中文(cman)配置方法-Linux</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>1.下载cman中文包</p>
+<p>链接: <a href="https://pan.baidu.com/s/1zZeHzQIb1v771aZQI1rwMQ" target="_blank" rel="noopener">https://pan.baidu.com/s/1zZeHzQIb1v771aZQI1rwMQ</a> 密码: iurj</p>
+<p>wget <a href="https://src.fedoraproject.org/repo/pkgs/man-pages-zh-CN/manpages-zh-1.5.1.tar.gz/13275fd039de8788b15151c896150bc4/manpages-zh-1.5.1.tar.gz" target="_blank" rel="noopener">https://src.fedoraproject.org/repo/pkgs/man-pages-zh-CN/manpages-zh-1.5.1.tar.gz/13275fd039de8788b15151c896150bc4/manpages-zh-1.5.1.tar.gz</a></p>
+<p>2. 解压编译安装<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">tar -zxvf manpages-zh-1.5.1.tar.gz</span><br><span class="line"></span><br><span class="line"><span class="built_in">cd</span> manpages-zh-1.5.1</span><br><span class="line"></span><br><span class="line">./configure --prefix=/想安装cman在哪里的路径 --<span class="built_in">disable</span>-zhtw</span><br><span class="line"></span><br><span class="line">make&amp;&amp;make install</span><br></pre></td></tr></table></figure></p>
+<p>3. 为了不抵消man，新建cman命令作为中文查询<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> ~</span><br><span class="line"></span><br><span class="line">vi .bash_profile</span><br><span class="line"></span><br><span class="line"><span class="built_in">alias</span> cman=<span class="string">'man -M 安装cman的路径/share/man/zh_CN'</span></span><br><span class="line"></span><br><span class="line">我的是默认路径 <span class="built_in">alias</span> cman=<span class="string">'man -M usr/local/share/man/zh_CN'</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">source</span> .bash_profile //更新bash_profile 使其生效</span><br></pre></td></tr></table></figure></p>
+<p>安装1.6manpages-zh-1.6<br>安装依赖<br>构建依赖包括：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">apt-get install autoconf</span><br><span class="line">apt-get install automake</span><br><span class="line">apt-get install python3</span><br><span class="line">apt-get install opencc</span><br><span class="line">apt-get install manpages-zh-1.6*</span><br></pre></td></tr></table></figure></p>
+<p>安装完成<br>中文 man 手册页计划</p>
+<p>项目:<a href="https://github.com/man-pages-zh/manpages-zh" target="_blank" rel="noopener">https://github.com/man-pages-zh/manpages-zh</a></p>
+<p>贡献项目</p>
+<p>欢迎您的参与，为该项目出一份力。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2019/05/20/man中文cman配置方法-Linux/" data-id="cjvvqyo2a000464j4oh9zcc34" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-163-apt源-debian9" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/05/20/163-apt源-debian9/" class="article-date">
+  <time datetime="2019-05-20T02:12:01.000Z" itemprop="datePublished">2019-05-20</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/05/20/163-apt源-debian9/">163 apt源 debian9</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#    163    debian 9</span></span><br><span class="line"></span><br><span class="line">deb http://mirrors.163.com/debian/ stretch main non-free contrib</span><br><span class="line"></span><br><span class="line">deb http://mirrors.163.com/debian/ stretch-updates main non-free contrib</span><br><span class="line"></span><br><span class="line">deb http://mirrors.163.com/debian/ stretch-backports main non-free contrib</span><br><span class="line"></span><br><span class="line">deb-src http://mirrors.163.com/debian/ stretch main non-free contrib</span><br><span class="line"></span><br><span class="line">deb-src http://mirrors.163.com/debian/ stretch-updates main non-free contrib</span><br><span class="line"></span><br><span class="line">deb-src http://mirrors.163.com/debian/ stretch-backports main non-free contrib</span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2019/05/20/163-apt源-debian9/" data-id="cjvvqyo26000164j49cj0f5m6" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-pycharm-中文-win-linux-mac-2018" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/05/20/pycharm-中文-win-linux-mac-2018/" class="article-date">
+  <time datetime="2019-05-20T02:11:04.000Z" itemprop="datePublished">2019-05-20</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/05/20/pycharm-中文-win-linux-mac-2018/">pycharm-中文 win linux mac 2018</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>win linux mac都通用一个汉化包 ,汉化步骤也一样</p>
+<p>要关闭pycharm才能汉化</p>
+<p>win安装</p>
+<p>1 打开本地pycharm安装路径，找到lib文件夹并删除里面的 resources_en.jar（英文版的语言包）</p>
+<p>2 把下载好的中文语言包拷贝到lib文件夹里，重新打开pycharm，就可以看到熟悉的中文界面了。 </p>
+<p>Linux安装</p>
+<p>1.查看java版本<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">java -version</span><br></pre></td></tr></table></figure></p>
+<p>2.解压<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tar -zxvf pycharm-*.tar.gz</span><br></pre></td></tr></table></figure></p>
+<p>3.进入./pycharm-*/bin下的目录<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span>  ./pycharm-*/bin</span><br></pre></td></tr></table></figure></p>
+<ol start="4">
+<li><p>运行pycharm</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">./pycharm.sh</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>正常步骤安装</p>
+</li>
+</ol>
+<p>下载链接: <a href="https://pan.baidu.com/s/17Lsa1bH3yIYfGs5lIT0vqg" target="_blank" rel="noopener">https://pan.baidu.com/s/17Lsa1bH3yIYfGs5lIT0vqg</a> 密码: u7ef</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2019/05/20/pycharm-中文-win-linux-mac-2018/" data-id="cjvvqyo2e000564j4w88pd4sy" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-安装输入法-debian" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/05/20/安装输入法-debian/" class="article-date">
+  <time datetime="2019-05-20T02:09:26.000Z" itemprop="datePublished">2019-05-20</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/05/20/安装输入法-debian/">安装输入法-debian</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">apt-get install im-config</span><br><span class="line"></span><br><span class="line">apt-get install fcitx</span><br><span class="line"></span><br><span class="line">apt-get install fcitx-frontend-all</span><br><span class="line"></span><br><span class="line">apt-get install fcitx-frontend-fbterm</span><br></pre></td></tr></table></figure>
+<p>安装64位搜狗输入法<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">dpkg -i sogoupinyin_2.2.0.0108_amd64.deb</span><br></pre></td></tr></table></figure></p>
+<p>安装可能会错，要安装依赖包<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">apt-get install -f</span><br></pre></td></tr></table></figure></p>
+<p>再安装搜狗输入法<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">dpkg -i sogoupinyin_2.2.0.0108_amd64.deb</span><br></pre></td></tr></table></figure></p>
+<p>到这就安装成功了，重启电脑就能用了<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">reboot</span><br></pre></td></tr></table></figure></p>
+<p>如果你输入的时候各种ctrl+space或者ctrl+shift一通乱按就是什么也看不到？因为根本就没有Ui控件…</p>
+<p>你需要安装输入法前端所需的ui动态库<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">apt-get install fcitx-ui-classic</span><br><span class="line"></span><br><span class="line">apt-get install fcitx-module-kimpanel</span><br><span class="line"></span><br><span class="line">apt-get install fcitx-ui-light</span><br></pre></td></tr></table></figure></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2019/05/20/安装输入法-debian/" data-id="cjvvqyo2l000a64j48t1vuu9c" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-docker-源-安装-使用-debian" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/05/20/docker-源-安装-使用-debian/" class="article-date">
+  <time datetime="2019-05-20T02:07:25.000Z" itemprop="datePublished">2019-05-20</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/05/20/docker-源-安装-使用-debian/">docker-源-安装-使用-debian</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="debian-9"><a href="#debian-9" class="headerlink" title="debian 9"></a>debian 9</h1><p>docker 官方源和阿里源,您喜欢那个就要那个。<br>在 /etc/apt/sources.list.d目录下新建一个文件，名为 docker.list 的文件，在把下面您喜欢的docker源写进docker.list文件里。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 进入源文件夹</span></span><br><span class="line">sudo <span class="built_in">cd</span> /etc/apt/sources.list.d</span><br><span class="line"><span class="comment"># 新建文件</span></span><br><span class="line">sudo touch docker.list</span><br><span class="line"><span class="comment"># 打开文件把docker源写入</span></span><br><span class="line">sudo vim docker.list</span><br></pre></td></tr></table></figure></p>
+<h2 id="docker-源"><a href="#docker-源" class="headerlink" title="docker 源"></a>docker 源</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 官方源</span></span><br><span class="line">deb https://download.docker.com/linux/debian stretch stable</span><br><span class="line"><span class="comment"># 阿里源</span></span><br><span class="line">deb https://mirrors.aliyun.com/docker-ce/linux/debian stretch stable</span><br></pre></td></tr></table></figure>
+<p>更新源<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">apt-get update</span><br></pre></td></tr></table></figure></p>
+<p>如果没有安装 apt-transport-https 就会提示您安装，如果您以安装了就不用管下面这步了。<br>假如您没安装就要执行下面这行命令了。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">apt-get install apt-transport-https</span><br></pre></td></tr></table></figure></p>
+<p>安装好后，要下载gpg,并载入</p>
+<h2 id="docker-gpg"><a href="#docker-gpg" class="headerlink" title="docker gpg"></a>docker gpg</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 官方gpg</span></span><br><span class="line">wget https://download.docker.com/linux/debian/gpg</span><br><span class="line"><span class="comment"># 阿里gpg</span></span><br><span class="line">wget https://mirrors.aliyun.com/docker-ce/linux/debian/gpg</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">apt-key add gpg</span><br><span class="line">apt-get update</span><br></pre></td></tr></table></figure>
+<h2 id="docker安装"><a href="#docker安装" class="headerlink" title="docker安装"></a>docker安装</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">apt-get install docker-ce</span><br></pre></td></tr></table></figure>
+<h2 id="下载并创建docker容器"><a href="#下载并创建docker容器" class="headerlink" title="下载并创建docker容器"></a>下载并创建docker容器</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker run -it debian:9 /bin/bash</span><br></pre></td></tr></table></figure>
+<h3 id="搜索网上镜像"><a href="#搜索网上镜像" class="headerlink" title="搜索网上镜像"></a>搜索网上镜像</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker search debian:9</span><br></pre></td></tr></table></figure>
+<p>docker search  [options] 镜像名称<br>-s num ：可以查找多少星以上的镜像</p>
+<h3 id="下载镜像"><a href="#下载镜像" class="headerlink" title="下载镜像"></a>下载镜像</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker pull debian:9</span><br></pre></td></tr></table></figure>
+<p>docker pull [options]   镜像名称[：tags]</p>
+<h3 id="端口映射"><a href="#端口映射" class="headerlink" title="端口映射"></a>端口映射</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker run -p 8080:8080 -it debian:9 /bin/bash</span><br></pre></td></tr></table></figure>
+<h3 id="ip端口映射-192-168-1-1是您要设置的ip"><a href="#ip端口映射-192-168-1-1是您要设置的ip" class="headerlink" title="ip端口映射,192.168.1.1是您要设置的ip"></a>ip端口映射,192.168.1.1是您要设置的ip</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker run -p 192.168.1.1:8080:8080 -it debian:9 /bin/bash</span><br></pre></td></tr></table></figure>
+<h3 id="多端口映射"><a href="#多端口映射" class="headerlink" title="多端口映射"></a>多端口映射</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker run -p 3333:3333 -p 444:444 -p 5555:5555 -p 2222:2222 --name debian -it debian:9 /bin/bash</span><br></pre></td></tr></table></figure>
+<p>docker 命令  run 创建容器  -p: 端口参数 第一个 444 主系统端口 第二个666 容器端口 –name: 别名参数 debian 自已想要的别名  -t:在新容器内指定一个伪终端或终端 -i:允许你对容器内的标准输入进行交互 debian:9 镜像名 /bin/bash 指定用户接口进行交互</p>
+<h2 id="容器"><a href="#容器" class="headerlink" title="容器"></a>容器</h2><p><img src="https://upload-images.jianshu.io/upload_images/12955800-01940818967d01f4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="截图_2018-11-14_21-27-25.png"></p>
+<h3 id="链接docker容器"><a href="#链接docker容器" class="headerlink" title="链接docker容器"></a>链接docker容器</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker <span class="built_in">exec</span> -it f2057b9a7ed1 /bin/bash</span><br></pre></td></tr></table></figure>
+<h3 id="退出docker-容器"><a href="#退出docker-容器" class="headerlink" title="退出docker 容器"></a>退出docker 容器</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">exit</span></span><br></pre></td></tr></table></figure>
+<h3 id="启动容器"><a href="#启动容器" class="headerlink" title="启动容器"></a>启动容器</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker start f2057b9a7ed1</span><br></pre></td></tr></table></figure>
+<h3 id="停止容器"><a href="#停止容器" class="headerlink" title="停止容器"></a>停止容器</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker stop f2057b9a7ed1</span><br></pre></td></tr></table></figure>
+<h3 id="重启容器"><a href="#重启容器" class="headerlink" title="重启容器"></a>重启容器</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker restart f2057b9a7ed1</span><br></pre></td></tr></table></figure>
+<h3 id="容器生成镜像-第一种"><a href="#容器生成镜像-第一种" class="headerlink" title="容器生成镜像  第一种"></a>容器生成镜像  第一种</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker <span class="built_in">export</span> f2057b9a7ed1 | gzip &gt; ubuntu-web.tar.gz</span><br></pre></td></tr></table></figure>
+<p>docker 命令 export 导出   容器 ID   |   gzip &gt; 文件名.tar.gz</p>
+<h3 id="镜像导入"><a href="#镜像导入" class="headerlink" title="镜像导入"></a>镜像导入</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">zcat ubuntu-web.tar.gz | docker import - ubuntu-web web:1</span><br></pre></td></tr></table></figure>
+<h2 id="镜像-第二种"><a href="#镜像-第二种" class="headerlink" title="镜像   第二种"></a>镜像   第二种</h2><p><img src="https://upload-images.jianshu.io/upload_images/12955800-66f53963188357a4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="截图_2018-11-14_21-27-39.png"><br>zcat 命令 文件名.tar.gz | gzip &gt; docker命令 import 导入 - 文件名  web 镜像名 1 标签</p>
+<h3 id="镜像克隆出来"><a href="#镜像克隆出来" class="headerlink" title="镜像克隆出来"></a>镜像克隆出来</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker save -o web-image.tar a28dabe45580</span><br></pre></td></tr></table></figure>
+<p>docker save -o 文件名.tar 镜像ID或REPOSITORY</p>
+<h3 id="镜像导入-1"><a href="#镜像导入-1" class="headerlink" title="镜像导入"></a>镜像导入</h3><p>镜像导入不能和第一种使用<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker load -i web-image.tar</span><br></pre></td></tr></table></figure></p>
+<p>docker load -i 文件名.tar</p>
+<h3 id="从容器创建一个新的镜像"><a href="#从容器创建一个新的镜像" class="headerlink" title="从容器创建一个新的镜像"></a>从容器创建一个新的镜像</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker commit f2057b9a7ed1  debian:1</span><br></pre></td></tr></table></figure>
+<p>docker commit 容器id 镜像名:v1.0<br>-m :提交时的说明文字；<br>-a :提交的镜像作者；</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2019/05/20/docker-源-安装-使用-debian/" data-id="cjvvqyo21000064j4jos3d9iq" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-终端美化-debian9" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/05/20/终端美化-debian9/" class="article-date">
+  <time datetime="2019-05-20T02:06:19.000Z" itemprop="datePublished">2019-05-20</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/05/20/终端美化-debian9/">终端美化-debian9</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>个人终端终端美化<br>在用户家目录下找到 .bashrc 文件，它是隐藏文件的。<br>打开文件在最后面写入下面的代码。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">export</span> PS1=<span class="string">"\[\e[31;1m\]\u\[\e[37;1m\][\[\e[33;1m\]\t\[\e[37;1m\]]\[\e[34;1m\]\w\[\e[31;1m\]\$\[\e[32;1m\]"</span></span><br></pre></td></tr></table></figure></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/12955800-0af6375ef57fc773.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="roo.png"></p>
+<p>可参考下面网址<br><a href="https://www.deepin.org/?s=%E7%BB%88%E7%AB%AF%E4%B8%B0%E5%AF%8C%E5%A4%9A%E5%BD%A9" target="_blank" rel="noopener">终端丰富多彩</a></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2019/05/20/终端美化-debian9/" data-id="cjvvqyo34000g64j4bjxkey53" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-无线网络驱动-debian9-10" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/05/20/无线网络驱动-debian9-10/" class="article-date">
+  <time datetime="2019-05-20T02:04:22.000Z" itemprop="datePublished">2019-05-20</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/05/20/无线网络驱动-debian9-10/">无线网络驱动-debian9~10</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>无线网络驱动安装</p>
+<h2 id="debian-9"><a href="#debian-9" class="headerlink" title="debian 9"></a>debian 9</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get update</span><br><span class="line">sudo apt-get install firmware-iwlwifi</span><br><span class="line">modprobe -r iwlwifi &amp;&amp; modprobe iwlwifi</span><br></pre></td></tr></table></figure>
+<h2 id="debian-10"><a href="#debian-10" class="headerlink" title="debian 10"></a>debian 10</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get update</span><br><span class="line">sudo apt-get install firmware-iwlwifi</span><br><span class="line">sudo reboot</span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2019/05/20/无线网络驱动-debian9-10/" data-id="cjvvqyo2k000964j4nddsi24t" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-快速安装QQ-Linux" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/05/20/快速安装QQ-Linux/" class="article-date">
+  <time datetime="2019-05-20T02:03:27.000Z" itemprop="datePublished">2019-05-20</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/05/20/快速安装QQ-Linux/">快速安装QQ-Linux</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>用appimage安装qq只用两步完成。<br>以有人打包好appimage了在这个链接下载<a href="https://github.com/askme765cs/Wine-QQ-TIM" target="_blank" rel="noopener">Wine-QQ-TIM</a><br>QQ版<a href="https://yun.tzmm.com.cn/index.php/s/XRbfi6aOIjv5gwj" target="_blank" rel="noopener">Wine-QQ</a><br>TIM版<a href="http://yun.tzmm.com.cn/index.php/s/5hJNzt2VR9aIEF2" target="_blank" rel="noopener">Wine-TIM</a><br>右键文件 –&gt; 属性 –&gt; 权限 –&gt; 允许此文件作为程序运行<br><img src="https://upload-images.jianshu.io/upload_images/12955800-b00e4bc0a011dfa9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="221.png"></p>
+<p>双击打开就ok了<br>个人建议扫二维码登录qq。<br><img src="https://upload-images.jianshu.io/upload_images/12955800-d2b8300a0309a27a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="22.png"></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2019/05/20/快速安装QQ-Linux/" data-id="cjvvqyo2q000e64j4p7epwz2y" class="article-share-link">Share</a>
       
       
     </footer>
@@ -109,6 +511,11 @@
 
   
 
+
+  <nav id="page-nav">
+    
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">Next &raquo;</a>
+  </nav>
 
 </section>
         
@@ -139,7 +546,23 @@
       <ul>
         
           <li>
-            <a href="/2019/05/20/hexo安装使用/">hexo安装使用</a>
+            <a href="/2019/05/20/阿里源-kali/">阿里源-kali</a>
+          </li>
+        
+          <li>
+            <a href="/2019/05/20/升级内核-debian9/">升级内核-debian9</a>
+          </li>
+        
+          <li>
+            <a href="/2019/05/20/man中文cman配置方法-Linux/">man中文(cman)配置方法-Linux</a>
+          </li>
+        
+          <li>
+            <a href="/2019/05/20/163-apt源-debian9/">163 apt源 debian9</a>
+          </li>
+        
+          <li>
+            <a href="/2019/05/20/pycharm-中文-win-linux-mac-2018/">pycharm-中文 win linux mac 2018</a>
           </li>
         
       </ul>

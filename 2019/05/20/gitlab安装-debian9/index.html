@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="utf-8">
+  
+
+  
+  <title>gitlab安装-debian9 | cyzyjin</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="第一步安装依赖的软件包123apt-get install curl openssh-server ca-certificates postfixsystemctl start sshdsystemctl start postfix 默认就行 ##第二步在清华大学源中下载gitla-cehttps://mirrors.tuna.tsinghua.edu.cn/gitlab-ce/debian/po">
+<meta property="og:type" content="article">
+<meta property="og:title" content="gitlab安装-debian9">
+<meta property="og:url" content="http://yoursite.com/2019/05/20/gitlab安装-debian9/index.html">
+<meta property="og:site_name" content="cyzyjin">
+<meta property="og:description" content="第一步安装依赖的软件包123apt-get install curl openssh-server ca-certificates postfixsystemctl start sshdsystemctl start postfix 默认就行 ##第二步在清华大学源中下载gitla-cehttps://mirrors.tuna.tsinghua.edu.cn/gitlab-ce/debian/po">
+<meta property="og:locale" content="default">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/12955800-7601e69e09bb5b78.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/12955800-086bed34dbe349a9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/12955800-1000db6d9a52b12f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/12955800-316ddd94cd1f9cb4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/12955800-ed2b8bc869efb751.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:updated_time" content="2019-05-20T02:01:59.660Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="gitlab安装-debian9">
+<meta name="twitter:description" content="第一步安装依赖的软件包123apt-get install curl openssh-server ca-certificates postfixsystemctl start sshdsystemctl start postfix 默认就行 ##第二步在清华大学源中下载gitla-cehttps://mirrors.tuna.tsinghua.edu.cn/gitlab-ce/debian/po">
+<meta name="twitter:image" content="https://upload-images.jianshu.io/upload_images/12955800-7601e69e09bb5b78.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+  
+    <link rel="alternate" href="/atom.xml" title="cyzyjin" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+</html>
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">cyzyjin</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-gitlab安装-debian9" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/05/20/gitlab安装-debian9/" class="article-date">
+  <time datetime="2019-05-20T01:55:10.000Z" itemprop="datePublished">2019-05-20</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      gitlab安装-debian9
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="第一步安装依赖的软件包"><a href="#第一步安装依赖的软件包" class="headerlink" title="第一步安装依赖的软件包"></a>第一步安装依赖的软件包</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">apt-get install curl openssh-server ca-certificates postfix</span><br><span class="line">systemctl start sshd</span><br><span class="line">systemctl start postfix</span><br></pre></td></tr></table></figure>
+<p>默认就行<br><img src="https://upload-images.jianshu.io/upload_images/12955800-7601e69e09bb5b78.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="21.png"><br><img src="https://upload-images.jianshu.io/upload_images/12955800-086bed34dbe349a9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="22.png"></p>
+<p>##第二步在清华大学源中下载gitla-ce<br><a href="https://mirrors.tuna.tsinghua.edu.cn/gitlab-ce/debian/pool/stretch/main/g/gitlab-ce/" target="_blank" rel="noopener">https://mirrors.tuna.tsinghua.edu.cn/gitlab-ce/debian/pool/stretch/main/g/gitlab-ce/</a><br>下载<a href="https://mirrors.tuna.tsinghua.edu.cn/gitlab-ce/debian/pool/stretch/main/g/gitlab-ce/gitlab-ce_11.5.0-ce.0_amd64.deb" target="_blank" rel="noopener">gitlab-ce_11.5.0-ce.0_amd64.deb</a>包<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wget https://mirrors.tuna.tsinghua.edu.cn/gitlab-ce/debian/pool/stretch/main/g/gitlab-ce/gitlab-ce_11.5.0-ce.0_amd64.deb</span><br></pre></td></tr></table></figure></p>
+<p>安装gitlab<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">dpkg -i gitlab-ce_11.5.0-ce.0_amd64.deb</span><br></pre></td></tr></table></figure></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/12955800-1000db6d9a52b12f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="20.png"><br>配置并启动GitLab<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">gitlab-ctl reconfigure</span><br></pre></td></tr></table></figure></p>
+<p>如果出错</p>
+<blockquote>
+<p>Running handlers:<br>There was an error running gitlab-ctl reconfigure:<br>execute[/opt/gitlab/embedded/bin/initdb -D /var/opt/gitlab/postgresql/data -E UTF8] (postgresql::enable line 80) had an error: Mixlib::ShellOut::ShellCommandFailed: Expected process to exit with [0], but received ‘1’<br>—- Begin output of /opt/gitlab/embedded/bin/initdb -D /var/opt/gitlab/postgresql/data -E UTF8 —-<br>STDOUT: The files belonging to this database system will be owned by user “gitlab-psql”.<br>This user must also own the server process.</p>
+</blockquote>
+<p>解决方法：<br>设置中文zh_CN.UTF-8<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">dpkg-reconfigure locales</span><br></pre></td></tr></table></figure></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/12955800-316ddd94cd1f9cb4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="40.png"><br><img src="https://upload-images.jianshu.io/upload_images/12955800-ed2b8bc869efb751.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="41.png"><br>重启一下系统<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">reboot</span><br></pre></td></tr></table></figure></p>
+<p>配置并启动GitLab<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">gitlab-ctl reconfigure</span><br></pre></td></tr></table></figure></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2019/05/20/gitlab安装-debian9/" data-id="cjvvqyo28000264j4aso4wvsv" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2019/05/20/LAMP-wordpress安装-debian9/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          LAMP-wordpress安装-debian9
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2019/05/20/LAMP-fastadmin安装-debian9/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">LAMP-fastadmin安装-debian9</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/05/">May 2019</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2019/05/20/阿里源-kali/">阿里源-kali</a>
+          </li>
+        
+          <li>
+            <a href="/2019/05/20/升级内核-debian9/">升级内核-debian9</a>
+          </li>
+        
+          <li>
+            <a href="/2019/05/20/man中文cman配置方法-Linux/">man中文(cman)配置方法-Linux</a>
+          </li>
+        
+          <li>
+            <a href="/2019/05/20/163-apt源-debian9/">163 apt源 debian9</a>
+          </li>
+        
+          <li>
+            <a href="/2019/05/20/pycharm-中文-win-linux-mac-2018/">pycharm-中文 win linux mac 2018</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2019 John Doe<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+
+
+  </div>
+</body>
+</html>

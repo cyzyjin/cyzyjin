@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="utf-8">
+  
+
+  
+  <title>docker-源-安装-使用-debian | cyzyjin</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="debian 9docker 官方源和阿里源,您喜欢那个就要那个。在 /etc/apt/sources.list.d目录下新建一个文件，名为 docker.list 的文件，在把下面您喜欢的docker源写进docker.list文件里。123456# 进入源文件夹sudo cd /etc/apt/sources.list.d# 新建文件sudo touch docker.list# 打开文件把d">
+<meta property="og:type" content="article">
+<meta property="og:title" content="docker-源-安装-使用-debian">
+<meta property="og:url" content="http://yoursite.com/2019/05/20/docker-源-安装-使用-debian/index.html">
+<meta property="og:site_name" content="cyzyjin">
+<meta property="og:description" content="debian 9docker 官方源和阿里源,您喜欢那个就要那个。在 /etc/apt/sources.list.d目录下新建一个文件，名为 docker.list 的文件，在把下面您喜欢的docker源写进docker.list文件里。123456# 进入源文件夹sudo cd /etc/apt/sources.list.d# 新建文件sudo touch docker.list# 打开文件把d">
+<meta property="og:locale" content="default">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/12955800-01940818967d01f4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/12955800-66f53963188357a4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:updated_time" content="2019-05-20T02:08:42.133Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="docker-源-安装-使用-debian">
+<meta name="twitter:description" content="debian 9docker 官方源和阿里源,您喜欢那个就要那个。在 /etc/apt/sources.list.d目录下新建一个文件，名为 docker.list 的文件，在把下面您喜欢的docker源写进docker.list文件里。123456# 进入源文件夹sudo cd /etc/apt/sources.list.d# 新建文件sudo touch docker.list# 打开文件把d">
+<meta name="twitter:image" content="https://upload-images.jianshu.io/upload_images/12955800-01940818967d01f4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+  
+    <link rel="alternate" href="/atom.xml" title="cyzyjin" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+</html>
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">cyzyjin</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-docker-源-安装-使用-debian" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/05/20/docker-源-安装-使用-debian/" class="article-date">
+  <time datetime="2019-05-20T02:07:25.000Z" itemprop="datePublished">2019-05-20</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      docker-源-安装-使用-debian
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="debian-9"><a href="#debian-9" class="headerlink" title="debian 9"></a>debian 9</h1><p>docker 官方源和阿里源,您喜欢那个就要那个。<br>在 /etc/apt/sources.list.d目录下新建一个文件，名为 docker.list 的文件，在把下面您喜欢的docker源写进docker.list文件里。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 进入源文件夹</span></span><br><span class="line">sudo <span class="built_in">cd</span> /etc/apt/sources.list.d</span><br><span class="line"><span class="comment"># 新建文件</span></span><br><span class="line">sudo touch docker.list</span><br><span class="line"><span class="comment"># 打开文件把docker源写入</span></span><br><span class="line">sudo vim docker.list</span><br></pre></td></tr></table></figure></p>
+<h2 id="docker-源"><a href="#docker-源" class="headerlink" title="docker 源"></a>docker 源</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 官方源</span></span><br><span class="line">deb https://download.docker.com/linux/debian stretch stable</span><br><span class="line"><span class="comment"># 阿里源</span></span><br><span class="line">deb https://mirrors.aliyun.com/docker-ce/linux/debian stretch stable</span><br></pre></td></tr></table></figure>
+<p>更新源<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">apt-get update</span><br></pre></td></tr></table></figure></p>
+<p>如果没有安装 apt-transport-https 就会提示您安装，如果您以安装了就不用管下面这步了。<br>假如您没安装就要执行下面这行命令了。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">apt-get install apt-transport-https</span><br></pre></td></tr></table></figure></p>
+<p>安装好后，要下载gpg,并载入</p>
+<h2 id="docker-gpg"><a href="#docker-gpg" class="headerlink" title="docker gpg"></a>docker gpg</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 官方gpg</span></span><br><span class="line">wget https://download.docker.com/linux/debian/gpg</span><br><span class="line"><span class="comment"># 阿里gpg</span></span><br><span class="line">wget https://mirrors.aliyun.com/docker-ce/linux/debian/gpg</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">apt-key add gpg</span><br><span class="line">apt-get update</span><br></pre></td></tr></table></figure>
+<h2 id="docker安装"><a href="#docker安装" class="headerlink" title="docker安装"></a>docker安装</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">apt-get install docker-ce</span><br></pre></td></tr></table></figure>
+<h2 id="下载并创建docker容器"><a href="#下载并创建docker容器" class="headerlink" title="下载并创建docker容器"></a>下载并创建docker容器</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker run -it debian:9 /bin/bash</span><br></pre></td></tr></table></figure>
+<h3 id="搜索网上镜像"><a href="#搜索网上镜像" class="headerlink" title="搜索网上镜像"></a>搜索网上镜像</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker search debian:9</span><br></pre></td></tr></table></figure>
+<p>docker search  [options] 镜像名称<br>-s num ：可以查找多少星以上的镜像</p>
+<h3 id="下载镜像"><a href="#下载镜像" class="headerlink" title="下载镜像"></a>下载镜像</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker pull debian:9</span><br></pre></td></tr></table></figure>
+<p>docker pull [options]   镜像名称[：tags]</p>
+<h3 id="端口映射"><a href="#端口映射" class="headerlink" title="端口映射"></a>端口映射</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker run -p 8080:8080 -it debian:9 /bin/bash</span><br></pre></td></tr></table></figure>
+<h3 id="ip端口映射-192-168-1-1是您要设置的ip"><a href="#ip端口映射-192-168-1-1是您要设置的ip" class="headerlink" title="ip端口映射,192.168.1.1是您要设置的ip"></a>ip端口映射,192.168.1.1是您要设置的ip</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker run -p 192.168.1.1:8080:8080 -it debian:9 /bin/bash</span><br></pre></td></tr></table></figure>
+<h3 id="多端口映射"><a href="#多端口映射" class="headerlink" title="多端口映射"></a>多端口映射</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker run -p 3333:3333 -p 444:444 -p 5555:5555 -p 2222:2222 --name debian -it debian:9 /bin/bash</span><br></pre></td></tr></table></figure>
+<p>docker 命令  run 创建容器  -p: 端口参数 第一个 444 主系统端口 第二个666 容器端口 –name: 别名参数 debian 自已想要的别名  -t:在新容器内指定一个伪终端或终端 -i:允许你对容器内的标准输入进行交互 debian:9 镜像名 /bin/bash 指定用户接口进行交互</p>
+<h2 id="容器"><a href="#容器" class="headerlink" title="容器"></a>容器</h2><p><img src="https://upload-images.jianshu.io/upload_images/12955800-01940818967d01f4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="截图_2018-11-14_21-27-25.png"></p>
+<h3 id="链接docker容器"><a href="#链接docker容器" class="headerlink" title="链接docker容器"></a>链接docker容器</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker <span class="built_in">exec</span> -it f2057b9a7ed1 /bin/bash</span><br></pre></td></tr></table></figure>
+<h3 id="退出docker-容器"><a href="#退出docker-容器" class="headerlink" title="退出docker 容器"></a>退出docker 容器</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">exit</span></span><br></pre></td></tr></table></figure>
+<h3 id="启动容器"><a href="#启动容器" class="headerlink" title="启动容器"></a>启动容器</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker start f2057b9a7ed1</span><br></pre></td></tr></table></figure>
+<h3 id="停止容器"><a href="#停止容器" class="headerlink" title="停止容器"></a>停止容器</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker stop f2057b9a7ed1</span><br></pre></td></tr></table></figure>
+<h3 id="重启容器"><a href="#重启容器" class="headerlink" title="重启容器"></a>重启容器</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker restart f2057b9a7ed1</span><br></pre></td></tr></table></figure>
+<h3 id="容器生成镜像-第一种"><a href="#容器生成镜像-第一种" class="headerlink" title="容器生成镜像  第一种"></a>容器生成镜像  第一种</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker <span class="built_in">export</span> f2057b9a7ed1 | gzip &gt; ubuntu-web.tar.gz</span><br></pre></td></tr></table></figure>
+<p>docker 命令 export 导出   容器 ID   |   gzip &gt; 文件名.tar.gz</p>
+<h3 id="镜像导入"><a href="#镜像导入" class="headerlink" title="镜像导入"></a>镜像导入</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">zcat ubuntu-web.tar.gz | docker import - ubuntu-web web:1</span><br></pre></td></tr></table></figure>
+<h2 id="镜像-第二种"><a href="#镜像-第二种" class="headerlink" title="镜像   第二种"></a>镜像   第二种</h2><p><img src="https://upload-images.jianshu.io/upload_images/12955800-66f53963188357a4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="截图_2018-11-14_21-27-39.png"><br>zcat 命令 文件名.tar.gz | gzip &gt; docker命令 import 导入 - 文件名  web 镜像名 1 标签</p>
+<h3 id="镜像克隆出来"><a href="#镜像克隆出来" class="headerlink" title="镜像克隆出来"></a>镜像克隆出来</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker save -o web-image.tar a28dabe45580</span><br></pre></td></tr></table></figure>
+<p>docker save -o 文件名.tar 镜像ID或REPOSITORY</p>
+<h3 id="镜像导入-1"><a href="#镜像导入-1" class="headerlink" title="镜像导入"></a>镜像导入</h3><p>镜像导入不能和第一种使用<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker load -i web-image.tar</span><br></pre></td></tr></table></figure></p>
+<p>docker load -i 文件名.tar</p>
+<h3 id="从容器创建一个新的镜像"><a href="#从容器创建一个新的镜像" class="headerlink" title="从容器创建一个新的镜像"></a>从容器创建一个新的镜像</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker commit f2057b9a7ed1  debian:1</span><br></pre></td></tr></table></figure>
+<p>docker commit 容器id 镜像名:v1.0<br>-m :提交时的说明文字；<br>-a :提交的镜像作者；</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2019/05/20/docker-源-安装-使用-debian/" data-id="cjvvqyo21000064j4jos3d9iq" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2019/05/20/安装输入法-debian/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          安装输入法-debian
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2019/05/20/终端美化-debian9/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">终端美化-debian9</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/05/">May 2019</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2019/05/20/阿里源-kali/">阿里源-kali</a>
+          </li>
+        
+          <li>
+            <a href="/2019/05/20/升级内核-debian9/">升级内核-debian9</a>
+          </li>
+        
+          <li>
+            <a href="/2019/05/20/man中文cman配置方法-Linux/">man中文(cman)配置方法-Linux</a>
+          </li>
+        
+          <li>
+            <a href="/2019/05/20/163-apt源-debian9/">163 apt源 debian9</a>
+          </li>
+        
+          <li>
+            <a href="/2019/05/20/pycharm-中文-win-linux-mac-2018/">pycharm-中文 win linux mac 2018</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2019 John Doe<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+
+
+  </div>
+</body>
+</html>
