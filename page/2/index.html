@@ -62,6 +62,122 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-终端美化-debian9" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/05/20/终端美化-debian9/" class="article-date">
+  <time datetime="2019-05-20T02:06:19.000Z" itemprop="datePublished">2019-05-20</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/05/20/终端美化-debian9/">终端美化-debian9</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>个人终端终端美化<br>在用户家目录下找到 .bashrc 文件，它是隐藏文件的。<br>打开文件在最后面写入下面的代码。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">export</span> PS1=<span class="string">"\[\e[31;1m\]\u\[\e[37;1m\][\[\e[33;1m\]\t\[\e[37;1m\]]\[\e[34;1m\]\w\[\e[31;1m\]\$\[\e[32;1m\]"</span></span><br></pre></td></tr></table></figure></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/12955800-0af6375ef57fc773.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="roo.png"></p>
+<p>可参考下面网址<br><a href="https://www.deepin.org/?s=%E7%BB%88%E7%AB%AF%E4%B8%B0%E5%AF%8C%E5%A4%9A%E5%BD%A9" target="_blank" rel="noopener">终端丰富多彩</a></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2019/05/20/终端美化-debian9/" data-id="cjvvr5iq8000g7xj4uzzztvk3" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-无线网络驱动-debian9-10" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/05/20/无线网络驱动-debian9-10/" class="article-date">
+  <time datetime="2019-05-20T02:04:22.000Z" itemprop="datePublished">2019-05-20</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/05/20/无线网络驱动-debian9-10/">无线网络驱动-debian9~10</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>无线网络驱动安装</p>
+<h2 id="debian-9"><a href="#debian-9" class="headerlink" title="debian 9"></a>debian 9</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get update</span><br><span class="line">sudo apt-get install firmware-iwlwifi</span><br><span class="line">modprobe -r iwlwifi &amp;&amp; modprobe iwlwifi</span><br></pre></td></tr></table></figure>
+<h2 id="debian-10"><a href="#debian-10" class="headerlink" title="debian 10"></a>debian 10</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get update</span><br><span class="line">sudo apt-get install firmware-iwlwifi</span><br><span class="line">sudo reboot</span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2019/05/20/无线网络驱动-debian9-10/" data-id="cjvvr5iq4000b7xj4jngrtzy8" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-快速安装QQ-Linux" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/05/20/快速安装QQ-Linux/" class="article-date">
+  <time datetime="2019-05-20T02:03:27.000Z" itemprop="datePublished">2019-05-20</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/05/20/快速安装QQ-Linux/">快速安装QQ-Linux</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>用appimage安装qq只用两步完成。<br>以有人打包好appimage了在这个链接下载<a href="https://github.com/askme765cs/Wine-QQ-TIM" target="_blank" rel="noopener">Wine-QQ-TIM</a><br>QQ版<a href="https://yun.tzmm.com.cn/index.php/s/XRbfi6aOIjv5gwj" target="_blank" rel="noopener">Wine-QQ</a><br>TIM版<a href="http://yun.tzmm.com.cn/index.php/s/5hJNzt2VR9aIEF2" target="_blank" rel="noopener">Wine-TIM</a><br>右键文件 –&gt; 属性 –&gt; 权限 –&gt; 允许此文件作为程序运行<br><img src="https://upload-images.jianshu.io/upload_images/12955800-b00e4bc0a011dfa9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="221.png"></p>
+<p>双击打开就ok了<br>个人建议扫二维码登录qq。<br><img src="https://upload-images.jianshu.io/upload_images/12955800-d2b8300a0309a27a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="22.png"></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2019/05/20/快速安装QQ-Linux/" data-id="cjvvr5ipz00067xj4oym2hl8k" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-中科大apt源-debian9" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2019/05/20/中科大apt源-debian9/" class="article-date">
@@ -89,7 +205,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/05/20/中科大apt源-debian9/" data-id="cjvvqyo2g000664j4s55jwsyr" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/05/20/中科大apt源-debian9/" data-id="cjvvr5iq5000d7xj4hr4pibm1" class="article-share-link">Share</a>
       
       
     </footer>
@@ -139,7 +255,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/05/20/LAMP-wordpress安装-debian9/" data-id="cjvvqyo33000f64j4j8018d7f" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/05/20/LAMP-wordpress安装-debian9/" data-id="cjvvr5iq100087xj4jpbz1cxm" class="article-share-link">Share</a>
       
       
     </footer>
@@ -187,7 +303,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/05/20/gitlab安装-debian9/" data-id="cjvvqyo28000264j4aso4wvsv" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/05/20/gitlab安装-debian9/" data-id="cjvvr5ipt00027xj41ysqyil4" class="article-share-link">Share</a>
       
       
     </footer>
@@ -234,7 +350,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/05/20/LAMP-fastadmin安装-debian9/" data-id="cjvvqyo2n000b64j4n4f1nssu" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/05/20/LAMP-fastadmin安装-debian9/" data-id="cjvvr5iqa000k7xj4r93400fw" class="article-share-link">Share</a>
       
       
     </footer>
@@ -281,7 +397,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/05/20/LAMP安装-debian9/" data-id="cjvvqyo2p000d64j443t3x5a5" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/05/20/LAMP安装-debian9/" data-id="cjvvr5ipr00017xj4rhz87gfu" class="article-share-link">Share</a>
       
       
     </footer>
@@ -318,7 +434,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/05/20/安装refindr引导工具-debian9/" data-id="cjvvqyo34000h64j4iz31yg9y" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/05/20/安装refindr引导工具-debian9/" data-id="cjvvr5iq9000i7xj4x2mgdtya" class="article-share-link">Share</a>
       
       
     </footer>
@@ -356,53 +472,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/05/20/安装grub主题-debian9/" data-id="cjvvqyo2i000764j465kkq6b7" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-hexo安装使用" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2019/05/20/hexo安装使用/" class="article-date">
-  <time datetime="2019-05-20T01:14:37.000Z" itemprop="datePublished">2019-05-20</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/05/20/hexo安装使用/">hexo安装使用</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h3 id="安装git"><a href="#安装git" class="headerlink" title="安装git"></a>安装git</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">apt-get install git</span><br></pre></td></tr></table></figure>
-<h3 id="下载nodejs"><a href="#下载nodejs" class="headerlink" title="下载nodejs"></a>下载nodejs</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wget https://nodejs.org/dist/v10.15.3/node-v10.15.3-linux-x64.tar.xz</span><br></pre></td></tr></table></figure>
-<h3 id="解压nodejs"><a href="#解压nodejs" class="headerlink" title="解压nodejs"></a>解压nodejs</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tar xvf node-v10.15.3-linux-x64.tar.xz</span><br></pre></td></tr></table></figure>
-<h3 id="改名"><a href="#改名" class="headerlink" title="改名"></a>改名</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mv node-v10.15.3-linux-x64 node</span><br></pre></td></tr></table></figure>
-<h3 id="移动文件到-opt"><a href="#移动文件到-opt" class="headerlink" title="移动文件到/opt"></a>移动文件到/opt</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mv node /opt</span><br></pre></td></tr></table></figure>
-<h3 id="软链接"><a href="#软链接" class="headerlink" title="软链接"></a>软链接</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">ln -s /opt/node/bin/node /usr/<span class="built_in">local</span>/bin/</span><br><span class="line">ln -s /opt/node/bin/npm /usr/<span class="built_in">local</span>/bin/</span><br><span class="line">查看node版本</span><br><span class="line">nodejs -v</span><br><span class="line">npm -v</span><br></pre></td></tr></table></figure>
-<h3 id="安装hexo"><a href="#安装hexo" class="headerlink" title="安装hexo"></a>安装hexo</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">npm install -g hexo-cli</span><br><span class="line">软链接</span><br><span class="line">ln -s /opt/node/lib/node_modules/hexo-cli/bin/hexo /usr/<span class="built_in">local</span>/bin/</span><br></pre></td></tr></table></figure>
-<h3 id="新建网站"><a href="#新建网站" class="headerlink" title="新建网站"></a>新建网站</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo init 网站名</span><br><span class="line"><span class="built_in">cd</span> 网站名</span><br><span class="line">npm install</span><br></pre></td></tr></table></figure>
-<h3 id="启动hexo"><a href="#启动hexo" class="headerlink" title="启动hexo"></a>启动hexo</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">生成</span><br><span class="line">hexo g</span><br><span class="line">启动</span><br><span class="line">hexo server</span><br></pre></td></tr></table></figure>
-<h3 id="部署git"><a href="#部署git" class="headerlink" title="部署git"></a>部署git</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">如果没有这条命令就无法上传到github</span><br><span class="line">npm install --save hexo-deployer-git</span><br><span class="line">上传</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/05/20/hexo安装使用/" data-id="cjvvqyo29000364j42ed8kabn" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/05/20/安装grub主题-debian9/" data-id="cjvvr5iq200097xj4y6nzs8uu" class="article-share-link">Share</a>
       
       
     </footer>
@@ -416,7 +486,7 @@
 
   <nav id="page-nav">
     
-    <a class="extend prev" rel="prev" href="/">&laquo; Prev</a><a class="page-number" href="/">1</a><span class="page-number current">2</span>
+    <a class="extend prev" rel="prev" href="/">&laquo; Prev</a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/">3</a><a class="extend next" rel="next" href="/page/3/">Next &raquo;</a>
   </nav>
 
 </section>
@@ -448,23 +518,23 @@
       <ul>
         
           <li>
+            <a href="/2019/05/20/日常插件-Chrome/">日常插件-Chrome</a>
+          </li>
+        
+          <li>
+            <a href="/2019/05/20/Office2010和中级-高级-DEMO盘和高级试题汇编题目的下载/">Office2010和中级_高级_DEMO盘和高级试题汇编题目的下载</a>
+          </li>
+        
+          <li>
+            <a href="/2019/05/20/插件下载网-Chrome/">插件下载网-Chrome</a>
+          </li>
+        
+          <li>
             <a href="/2019/05/20/阿里源-kali/">阿里源-kali</a>
           </li>
         
           <li>
             <a href="/2019/05/20/升级内核-debian9/">升级内核-debian9</a>
-          </li>
-        
-          <li>
-            <a href="/2019/05/20/man中文cman配置方法-Linux/">man中文(cman)配置方法-Linux</a>
-          </li>
-        
-          <li>
-            <a href="/2019/05/20/163-apt源-debian9/">163 apt源 debian9</a>
-          </li>
-        
-          <li>
-            <a href="/2019/05/20/pycharm-中文-win-linux-mac-2018/">pycharm-中文 win linux mac 2018</a>
           </li>
         
       </ul>
