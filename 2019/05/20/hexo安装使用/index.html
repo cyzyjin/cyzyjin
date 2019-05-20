@@ -7,17 +7,17 @@
   
   <title>hexo安装使用 | cyzyjin</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="###安装git1apt-get install git ###下载nodejs1wget https://nodejs.org/dist/v10.15.3/node-v10.15.3-linux-x64.tar.xz ###解压nodejs1tar xvf node-v10.15.3-linux-x64.tar.xz ###改名1mv node-v10.15.3-linux-x64 node #">
+  <meta name="description" content="安装git1apt-get install git 下载nodejs1wget https://nodejs.org/dist/v10.15.3/node-v10.15.3-linux-x64.tar.xz 解压nodejs1tar xvf node-v10.15.3-linux-x64.tar.xz 改名1mv node-v10.15.3-linux-x64 node 移动文件到/opt1mv">
 <meta property="og:type" content="article">
 <meta property="og:title" content="hexo安装使用">
 <meta property="og:url" content="http://yoursite.com/2019/05/20/hexo安装使用/index.html">
 <meta property="og:site_name" content="cyzyjin">
-<meta property="og:description" content="###安装git1apt-get install git ###下载nodejs1wget https://nodejs.org/dist/v10.15.3/node-v10.15.3-linux-x64.tar.xz ###解压nodejs1tar xvf node-v10.15.3-linux-x64.tar.xz ###改名1mv node-v10.15.3-linux-x64 node #">
+<meta property="og:description" content="安装git1apt-get install git 下载nodejs1wget https://nodejs.org/dist/v10.15.3/node-v10.15.3-linux-x64.tar.xz 解压nodejs1tar xvf node-v10.15.3-linux-x64.tar.xz 改名1mv node-v10.15.3-linux-x64 node 移动文件到/opt1mv">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-05-20T01:28:35.284Z">
+<meta property="og:updated_time" content="2019-05-20T01:35:40.819Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="hexo安装使用">
-<meta name="twitter:description" content="###安装git1apt-get install git ###下载nodejs1wget https://nodejs.org/dist/v10.15.3/node-v10.15.3-linux-x64.tar.xz ###解压nodejs1tar xvf node-v10.15.3-linux-x64.tar.xz ###改名1mv node-v10.15.3-linux-x64 node #">
+<meta name="twitter:description" content="安装git1apt-get install git 下载nodejs1wget https://nodejs.org/dist/v10.15.3/node-v10.15.3-linux-x64.tar.xz 解压nodejs1tar xvf node-v10.15.3-linux-x64.tar.xz 改名1mv node-v10.15.3-linux-x64 node 移动文件到/opt1mv">
   
     <link rel="alternate" href="/atom.xml" title="cyzyjin" type="application/atom+xml">
   
@@ -86,21 +86,21 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>###安装git<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">apt-get install git</span><br></pre></td></tr></table></figure></p>
-<p>###下载nodejs<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wget https://nodejs.org/dist/v10.15.3/node-v10.15.3-linux-x64.tar.xz</span><br></pre></td></tr></table></figure></p>
-<p>###解压nodejs<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tar xvf node-v10.15.3-linux-x64.tar.xz</span><br></pre></td></tr></table></figure></p>
-<p>###改名<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mv node-v10.15.3-linux-x64 node</span><br></pre></td></tr></table></figure></p>
-<p>###移动文件到/opt<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mv node /opt</span><br></pre></td></tr></table></figure></p>
-<p>###软链接<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">ln -s /opt/node/bin/node /usr/<span class="built_in">local</span>/bin/</span><br><span class="line">ln -s /opt/node/bin/npm /usr/<span class="built_in">local</span>/bin/</span><br><span class="line">查看node版本</span><br><span class="line">nodejs -v</span><br><span class="line">npm -v</span><br></pre></td></tr></table></figure></p>
-<p>###安装hexo<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">npm install -g hexo-cli</span><br><span class="line">软链接</span><br><span class="line">ln -s /opt/node/lib/node_modules/hexo-cli/bin/hexo /usr/<span class="built_in">local</span>/bin/</span><br></pre></td></tr></table></figure></p>
-<p>###新建网站<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo init 网站名</span><br><span class="line"><span class="built_in">cd</span> 网站名</span><br><span class="line">npm install</span><br></pre></td></tr></table></figure></p>
-<p>###启动hexo<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">生成</span><br><span class="line">hexo g</span><br><span class="line">启动</span><br><span class="line">hexo server</span><br></pre></td></tr></table></figure></p>
-<p>###部署git<br><code>`</code><br>如果没有这条命令就无法上传到github<br>npm install –save hexo-deployer-git<br>上传<br>hexo d</p>
+        <h3 id="安装git"><a href="#安装git" class="headerlink" title="安装git"></a>安装git</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">apt-get install git</span><br></pre></td></tr></table></figure>
+<h3 id="下载nodejs"><a href="#下载nodejs" class="headerlink" title="下载nodejs"></a>下载nodejs</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wget https://nodejs.org/dist/v10.15.3/node-v10.15.3-linux-x64.tar.xz</span><br></pre></td></tr></table></figure>
+<h3 id="解压nodejs"><a href="#解压nodejs" class="headerlink" title="解压nodejs"></a>解压nodejs</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tar xvf node-v10.15.3-linux-x64.tar.xz</span><br></pre></td></tr></table></figure>
+<h3 id="改名"><a href="#改名" class="headerlink" title="改名"></a>改名</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mv node-v10.15.3-linux-x64 node</span><br></pre></td></tr></table></figure>
+<h3 id="移动文件到-opt"><a href="#移动文件到-opt" class="headerlink" title="移动文件到/opt"></a>移动文件到/opt</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mv node /opt</span><br></pre></td></tr></table></figure>
+<h3 id="软链接"><a href="#软链接" class="headerlink" title="软链接"></a>软链接</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">ln -s /opt/node/bin/node /usr/<span class="built_in">local</span>/bin/</span><br><span class="line">ln -s /opt/node/bin/npm /usr/<span class="built_in">local</span>/bin/</span><br><span class="line">查看node版本</span><br><span class="line">nodejs -v</span><br><span class="line">npm -v</span><br></pre></td></tr></table></figure>
+<h3 id="安装hexo"><a href="#安装hexo" class="headerlink" title="安装hexo"></a>安装hexo</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">npm install -g hexo-cli</span><br><span class="line">软链接</span><br><span class="line">ln -s /opt/node/lib/node_modules/hexo-cli/bin/hexo /usr/<span class="built_in">local</span>/bin/</span><br></pre></td></tr></table></figure>
+<h3 id="新建网站"><a href="#新建网站" class="headerlink" title="新建网站"></a>新建网站</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo init 网站名</span><br><span class="line"><span class="built_in">cd</span> 网站名</span><br><span class="line">npm install</span><br></pre></td></tr></table></figure>
+<h3 id="启动hexo"><a href="#启动hexo" class="headerlink" title="启动hexo"></a>启动hexo</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">生成</span><br><span class="line">hexo g</span><br><span class="line">启动</span><br><span class="line">hexo server</span><br></pre></td></tr></table></figure>
+<h3 id="部署git"><a href="#部署git" class="headerlink" title="部署git"></a>部署git</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">如果没有这条命令就无法上传到github</span><br><span class="line">npm install --save hexo-deployer-git</span><br><span class="line">上传</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/05/20/hexo安装使用/" data-id="cjvvoyahx0000snj4hvxdwqbi" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/05/20/hexo安装使用/" data-id="cjvvp8opk0000utj453lp0k5x" class="article-share-link">Share</a>
       
       
     </footer>
